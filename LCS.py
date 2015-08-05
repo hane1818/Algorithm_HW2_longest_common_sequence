@@ -23,20 +23,20 @@ def LCS(a_len, b_len, a, b):
 
 
 def main():
-    data = input()
-    data = data.split()
+    str_length = input()
+    str_length = str_length.split()
     try:
-        a_len = int(data[0])
-        b_len = int(data[1])
-        a_str = data[2]
-        b_str = data[3]
-        ans = LCS(a_len, b_len, a_str, b_str)
-        if ans:
-            print(ans)
-
+        a_len = int(str_length[0])
+        b_len = int(str_length[1])
     except:
-        print('輸入必須以空白間隔\n請重新輸入')
+        print("字串長度應為整數型態")
         main()
+    a_str = input()
+    b_str = input()
+    ans = LCS(a_len, b_len, a_str, b_str)
+    if ans:
+        print(ans)
+
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,9 @@
 # Algorithm_HW2_longest_common_sequence
 Learn how to implement DP algorithm find the longest  continuously common sequence.
 
+## Language
+Python3
+
 ## How to use
 ```bash
 $ python LCS.py
